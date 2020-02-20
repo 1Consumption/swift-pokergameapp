@@ -40,11 +40,8 @@ class Player{
 }
 
 extension Player: CustomStringConvertible{
-    var description: String {
-        guard self is Dealer else{
-            return "Player\(order)"
-        }
-        return "Dealer"
+    @objc var description: String {
+        return "Player\(order)"
     }
 }
 

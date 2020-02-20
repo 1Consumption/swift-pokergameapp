@@ -11,6 +11,10 @@ import Foundation
 class Dealer: Player{
     private var cardDeck: CardDeck
     
+    override var description: String{
+        return "Dealer"
+    }
+    
     init(){
         self.cardDeck = CardDeck()
         self.cardDeck.shuffle()
